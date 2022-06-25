@@ -1,9 +1,42 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        -
-    </head>
-    <body>
-        We are getting married!
-    </body>
+<head>
+<title>MK</title>
+<style>
+body {
+  background-image: url('space.jpg');
+  background-repeat: repeat;
+}
+
+.video-container {
+    overflow: hidden;
+    position: relative;
+    width:100%;
+    text-align: center;
+}
+
+.video-container::after {
+    padding-top: 56.25%;
+    display: block;
+    content: '';
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    width: 70%;
+    height: 70%;
+}
+
+</style> 
+</head>
+<body>
+<div class="video-container">
+<h1 style="color:white; font-family:futura">We are getting married!</h1>
+<iframe src="https://www.youtube.com/embed/jNb_GCmFNg4" frameborder="0" 
+allow="accelerometer; 
+autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+</body>
 </html>
